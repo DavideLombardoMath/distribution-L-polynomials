@@ -1,0 +1,1 @@
+This repository contains MAGMA code files to verify computations in the paper "On the L-polynomials of curves over finite fields", by F. Ballini, D. Lombardo and M. Verzobio. The output of these computations is also included.
