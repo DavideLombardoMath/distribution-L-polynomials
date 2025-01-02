@@ -73,7 +73,7 @@ end for;
 s := &+multiplicities;
 multTrue := [ RF!x/s : x in multiplicities ];
 sPP := &+multiplicitiesPP;
-multTruePP := [ RF!x/s : x in multiplicitiesPP ];
+multTruePP := [ RF!x/sPP : x in multiplicitiesPP ];
 /*
 multTrue[i] is the values of H'(q,t) as defined in Equation 10 for t=i-Floor(4*Sqrt(q)).
 multTruePP[i] is the values of H'(q,t) taking account also of the PPAV.
@@ -99,3 +99,5 @@ end for;
 "Distance between prediction and measurement", &+[Abs(Densities2[i]-multTrue[i]) : i in [1..#multTrue]];
 "Distance between prediction and measurement with PPAV", &+[Abs(Densities2[i]-multTruePP[i]) : i in [1..#multTruePP]];
 "Distance between Sato Tate prediction and measurement", &+[Abs(SmoothDens[i]-multTrue[i]) : i in [1..#multTrue]];
+
+exit;
